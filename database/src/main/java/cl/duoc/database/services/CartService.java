@@ -22,6 +22,14 @@ public class CartService {
         }
     }
 
+    public CartEntity buyInstrument(CartEntity cartEntity) {
+        try {
+            return cartRepository.save(cartEntity);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
     public Integer getCartTotalPrice(String id) {
         try {
             return cartRepository.findCartTotalPrice(id);
