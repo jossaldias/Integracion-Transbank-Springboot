@@ -1,21 +1,21 @@
 package cl.duoc.database.model.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "usuarios")
 public class UserEntity {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int     idUsuario;
-    private String  fullName;
-    private String  username;
-    private String  password;
+    private int idUsuario;
+    private String fullName;
+    private String username;
+    private String password;
 
     public UserEntity() {
 
@@ -53,5 +53,4 @@ public class UserEntity {
         this.password = password;
     }
 
-    
 }
