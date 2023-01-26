@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.FeignAutoConfiguration;
 
 @SpringBootApplication
 @EnableFeignClients("cl.duoc.bff.clients")
-@ImportAutoConfiguration({ FeignAutoConfiguration.class, HttpHandlerAutoConfiguration.class})
+@ImportAutoConfiguration({ FeignAutoConfiguration.class, HttpHandlerAutoConfiguration.class })
 public class BffApplication {
 
 	public static void main(String[] args) {
